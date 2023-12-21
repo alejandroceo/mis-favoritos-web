@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Marcadores</title>
+    <script src="https://kit.fontawesome.com/3a26b62d3a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Mis Favoritos</h1>
+
+    <!-- Add form -->
+    <!-- A button to open the popup form -->
+    <button class="open-button" onclick="openForm()">
+        <div>
+            <i class="fas fa-circle-plus fa-3x newbtn"></i>
+        </div>
+    </button>
+
+    <!-- The form -->
+    <div class="form-popup" id="myForm">
+        <div class="form-container">
+            <h2>Mis Favoritos</h2>
+    
+            <label for="bookmarkName"><b>Nombre del marcador</b></label>
+            <input id="bookmarkName" class="form-input" type="text" placeholder="Nombre Favorito" required>
+    
+            <label for="bookmarkUrl"><b>URL</b></label>
+            <input id="bookmarkUrl" class="form-input" type="text" placeholder="URL del Favorito" required>
+            
+            <div class="button-container">
+                <button id="button" class="btn" onclick="addBookmark()">Agregar</button>
+                <button class="btn cancel" onclick="closeForm()">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="bookmarksDisplay">
+        <!-- Your bookmarks content goes here -->
+    </div>
+
+    <button id="dark-mode-toggle" onclick="toggleDarkMode()">
+        <i class="fas fa-adjust"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/script.js"></script>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 @alejandroceo. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

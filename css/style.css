@@ -1,0 +1,168 @@
+/* Importa la fuente de Google */
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
+
+/* Estilos comunes para el modo claro y oscuro */
+* {
+    font-family: 'Cabin', sans-serif;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    padding: 15px;
+    display: inline-block;
+}
+
+.newbtn {
+    transition: 0.2s;
+}
+
+.newbtn:hover {
+    color: #a99abd;
+}
+
+#bookmarksDisplay {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bookmark {
+    background-color: #e5d0e3;
+    padding: 5px;
+    margin: 15px;
+    position: relative;
+    transition: 0.5s;
+    border-radius: 8px;
+}
+
+.bookmark:hover {
+    background-color: #a99abd;
+    color: white;
+}
+
+.deletebtn {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: none;
+}
+
+.bookmark:hover .deletebtn {
+    display: block;
+}
+
+.btn {
+    background-color: #c0d8c0;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin: 5px;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #95a795;
+}
+
+.open-button {
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    background-color: transparent;
+}
+
+.form-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+}
+
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: #c0d8c0;
+    border-radius: 10px;
+}
+
+.form-input {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+}
+
+.form-input:focus {
+    outline: none;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.form-container .btn {
+    background-color: #c0d8c0;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: inline;
+    box-sizing: border-box;
+}
+
+.form-container .btn:hover {
+    background-color: #95a795;
+}
+
+body {
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #c0d8c0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos específicos para el modo oscuro */
+body.dark-mode {
+    background-color: #222;
+    color: #fff;
+}
+
+/* Estilos para el botón de cambio de modo oscuro */
+#dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #c0d8c0;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#dark-mode-toggle:hover {
+    background-color: #95a795;
+}
